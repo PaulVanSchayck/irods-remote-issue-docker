@@ -22,7 +22,7 @@ if [[ ! -e /var/run/irods_installed ]]; then
     python /var/lib/irods/scripts/setup_irods.py < /etc/irods/setup_responses
 
     # Setup rules
-    cp /rules/rules.re /etc/irods/.
+    ln -s /rules/rules.re /etc/irods/rules.re
     /opt/irods/prepend_ruleset.py /etc/irods/server_config.json rules
 
     touch /var/run/irods_installed

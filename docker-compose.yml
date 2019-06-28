@@ -15,14 +15,6 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./rules:/rules
-  ires:
-    build:
-      context: ires/
-      args:
-        - ENV_IRODS_VERSION
-    hostname: ires
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
   irods-db:
     image: postgres:${ENV_POSTGRES_VERSION}
     hostname: irods-db

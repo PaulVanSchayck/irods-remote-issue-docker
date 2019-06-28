@@ -1,43 +1,48 @@
 foo {
-    if ("true" == "false") {
-    }
+    if (true == true) {}
 
-    *xyz = "iresResource";
+    *xyz = "foo";
 
     remote("irods","") {
-        msiWriteRodsLog("*xyz", 0);
+        *b = *xyz;
     }
 }
 
 filler {
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
-    msiWriteRodsLog("filler", 0);
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
+    *a = 1;
 }
