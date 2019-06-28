@@ -1,0 +1,32 @@
+version: '2'
+services:
+  irods:
+    build:
+      context: icat/
+      args:
+        - ENV_IRODS_VERSION
+    hostname: irods
+    ports:
+      - "1247:1247"
+      - "1248:1248"
+    environment:
+      RODS_PASSWORD: irods
+      PGPASSWORD: foobar
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./rules:/rules
+  ires:
+    build:
+      context: ires/
+      args:
+        - ENV_IRODS_VERSION
+    hostname: ires
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+  irods-db:
+    image: postgres:${ENV_POSTGRES_VERSION}
+    hostname: irods-db
+    environment:
+      POSTGRES_PASSWORD: foobar
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
